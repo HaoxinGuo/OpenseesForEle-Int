@@ -1,0 +1,3 @@
+digraph gra1{
+//子图十
+"truss"->{"CorotTruss";"CorotTruss2";"CorotTrussSection";"N4BiaxialTruss";"Truss";"Truss2";"TrussSection"}

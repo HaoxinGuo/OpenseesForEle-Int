@@ -1,0 +1,233 @@
+digraph UML{
+ subgraph cluster_1 {
+        node [style=filled];
+        "ElastomericBearingBoucWen2d" 
+		"ElastomericBearingBoucWen3d" 
+		"ElastomericBearingBoucWenMod3d" 
+		"ElastomericBearingPlasticity2d" 
+		"ElastomericBearingPlasticity3d" 
+		"ElastomericBearingUFRP2d" 
+		"ElastomericX"
+        label = "elastomericBearing";
+        color=red;
+    }
+ subgraph cluster_2 {
+        node [style=filled];
+        "ElasticBeam2d" 
+		"ElasticBeam3d" 
+		"ElasticTimoshenkoBeam2d" 
+		"ElasticTimoshenkoBeam3d" 
+		"ModElasticBeam2d"
+        label = "elastic Beam Column";
+        color=blue;
+    }
+
+ subgraph cluster_3 {
+        node [style=filled];
+        "ElasticForceBeamColumn2d"
+		"ElasticForceBeamColumn3d "
+		"ElasticForceBeamColumnWarping2d "
+		"ForceBeamColumn2d"
+		"ForceBeamColumn3d"
+		"ForceBeamColumnCBDI2d"
+		"ForceBeamColumnWarping2d"
+        label = "forceBeamColumn";
+        color=green;
+    }
+
+
+
+ subgraph cluster_4 {
+		node [style=filled];
+		"FlatSliderSimple2d"
+		"FlatSliderSimple3d"
+		"FPBearingPTV"
+		"MultiFP2d"
+		"RJWatsonEQS2d"
+		"RJWatsonEQS3d"
+		"SingleFPSimple2d"
+		"SingleFPSimple3d"
+		"TFP_Bearing"
+		"TFP_Bearing2d"
+		"TPB1D"
+		"TripleFrictionPendulum"
+		label = "frictionBearing";
+        color=pink;
+    }
+
+ subgraph cluster_5 {
+		node [style=filled];
+		"GenericClient"
+		"GenericCopy"
+				color=pink;
+		label = "generic";
+    }
+
+ subgraph cluster_6 {
+		node [style=filled];
+		"KikuchiBearing"
+		"MultipleNormalSpring"
+		"MultipleShearSpring"
+		"YamamotoBiaxialHDR"
+		label = "HUelements";
+        color=pink;
+    }
+
+ subgraph cluster_7 {
+		node [style=filled];
+		"BeamColumnJoint2d"
+		"BeamColumnJoint3d"
+		"ElasticTubularJoint"
+		"Joint2D"
+		"Joint3D"
+		"MP_Joint2D"
+		"MP_Joint3D"
+		label = "joint";
+        color=pink;
+    }
+
+
+ subgraph cluster_8 {
+		node [style=filled];
+		"MVLEM"
+		"SFI_MVLEM"
+        color=pink;
+    }
+	
+ subgraph cluster_9 {
+		node [style=filled];
+		"ConstantPressureVolumeQuad"
+		"EnhancedQuad"
+		"FourNodeQuad"
+		"FourNodeQuad3d"
+		"FourNodeQuadWithSensitivity"
+		"NineNodeMixedQuad"
+        color=pink;
+    }	
+	
+ subgraph cluster_10 {
+		node [style=filled];
+		"CorotTruss"
+		"CorotTruss2"
+		"CorotTrussSection"
+		"N4BiaxialTruss"
+		"Truss"
+		"Truss2"
+		"TrussSection"
+        color=pink;
+    }
+
+
+ subgraph cluster_11 {
+		node [style=filled];
+		"CoupledZeroLength"
+		"TclZeroLength"
+		"Zerolength"
+		"ZeroLengthContact2D"
+		"ZeroLengthContact3D"
+		"ZeroLengthContactNTS2D"
+		"ZeroLengthlmpact3D"
+		"ZeroLengthlnterface2D"
+		"ZeroLengthND"
+		"ZeroLengthRocking"
+		"ZeroLengthSection"	
+        color=pink;
+    }	
+
+ subgraph cluster_12 {
+		node [style=filled];
+		"BbarBrick"
+		"BbarBrickWithSensitivity"
+		"Brick"
+		"shp3d"
+		"Twenty_Node_Brick"
+        color=pink;
+		label = "brick";
+    }
+	
+	
+	
+
+
+
+
+
+
+
+//总图
+Element->{"beam With Hinges"
+;"brick"
+;"catenaryCable"
+;"componentElement"
+;"dispBeamColumn"
+;"dispBeamColumnlnt"
+;"elasticBeamColumn"
+;"elastomericBearing"
+;"feap"
+;"forceBeamColumn"
+;"frictionBearing"
+;"generic"
+;"HUelements"
+;"joint"
+;"mvlem"
+;"nonlinearBeamColumn"
+//;"pyMacro"
+;"quad"
+;"shell"
+;"surfaceLoad"
+;"tetrahedron"
+;"triangle"
+;"truss"
+;"twoNodeLink"
+;"ulBeamColumn"
+;"up"
+;"UWelements"
+;"XMUelements"
+;"zero Length"
+}
+
+//子图一
+elasticBeamColumn->{"ElasticBeam2d";"ElasticBeam3d";"ElasticTimoshenkoBeam2d";"ElasticTimoshenkoBeam3d";"ModElasticBeam2d"}
+//子图二
+elastomericBearing->{"ElastomericBearingBoucWen2d";"ElastomericBearingBoucWen3d";"ElastomericBearingBoucWenMod3d";"ElastomericBearingPlasticity2d";"ElastomericBearingPlasticity3d";"ElastomericBearingUFRP2d";"ElastomericX"}
+//子图三
+forceBeamColumn->{"ElasticForceBeamColumn2d";"ElasticForceBeamColumn3d ";"ElasticForceBeamColumnWarping2d ";"ForceBeamColumn2d ";"ForceBeamColumn3d ";"ForceBeamColumnCBDI2d ";"ForceBeamColumnWarping2d "}
+//子图四
+frictionBearing->{"FlatSliderSimple2d";"FlatSliderSimple3d";"FPBearingPTV";"MultiFP2d";"RJWatsonEQS2d";"RJWatsonEQS3d";"SingleFPSimple2d";"SingleFPSimple3d";"TFP_Bearing";"TFP_Bearing2d";"TPB1D";"TripleFrictionPendulum"}
+//子图五
+generic->{"GenericClient";"GenericCopy"}
+//子图六
+HUelements->{"KikuchiBearing";"MultipleNormalSpring";"MultipleShearSpring";"YamamotoBiaxialHDR"}
+//子图七
+"joint"->{"BeamColumnJoint2d";
+"BeamColumnJoint3d";
+"ElasticTubularJoint";
+"Joint2D";
+"Joint3D";
+"MP_Joint2D";
+"MP_Joint3D"}
+//子图八
+"mvlem"->{"MVLEM";"SFI_MVLEM"}
+//子图九
+"quad"->{"ConstantPressureVolumeQuad";
+"EnhancedQuad";
+"FourNodeQuad";
+"FourNodeQuad3d";
+"FourNodeQuadWithSensitivity";
+"NineNodeMixedQuad";}
+
+//子图十
+"truss"->{"CorotTruss";"CorotTruss2";"CorotTrussSection";"N4BiaxialTruss";"Truss";"Truss2";"TrussSection"}
+//子图十一
+"zero Length"->{"CoupledZeroLength";"TclZeroLength";"Zerolength";"ZeroLengthContact2D";"ZeroLengthContact3D";
+"ZeroLengthContactNTS2D";"ZeroLengthlmpact3D";"ZeroLengthlnterface2D";"ZeroLengthND";"ZeroLengthRocking";"ZeroLengthSection"
+}
+
+//子图十二
+"brick"->{"BbarBrick";"BbarBrickWithSensitivity";"Brick";"shp3d";"Twenty_Node_Brick"}
+
+
+
+
+
+}

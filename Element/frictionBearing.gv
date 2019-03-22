@@ -1,0 +1,5 @@
+//子图四
+digraph gra1{
+frictionBearing->{"FlatSliderSimple2d";"FlatSliderSimple3d";"FPBearingPTV";"MultiFP2d";"RJWatsonEQS2d";"RJWatsonEQS3d";"SingleFPSimple2d";"SingleFPSimple3d";"TFP_Bearing";"TFP_Bearing2d";"TPB1D";"TripleFrictionPendulum"}
+}
+

@@ -9,6 +9,7 @@
 \usepackage{times}
 \usepackage{bm}
 \usepackage{float}
+\usepackage[pdf]{graphviz}
 \newcommand{\song}{\CJKfamily{song}}
 \newcommand{\xiaoer}{\fontsize{18pt}{18pt}\selectfont}
 \newcommand{\xiaosan}{\fontsize{15pt}{22pt}\selectfont}
@@ -162,7 +163,31 @@ element elasticBeamColumn $eleTag $iNode $jNode $A $E $G $J $Iy $Iz $transfTag
 	\label{tu10}
 \end{figure}
 
+\begin{lstlisting}
+element nonlinearBeamColumn $eleTag $iNode $jNode $numIntgrPts $secTag $transfTag <-mass $massDens> <-iter $maxIters $tol>
+\end{lstlisting}
 
+
+这个命令用来构造一个非线性的BeamColumn元素对象，它是基于非迭代（或迭代）力的公式，并且考虑到沿着元素的可塑性扩展
+
+对于一个二维问题：
+\begin{lstlisting}
+element beamWithHinges $eleTag $iNode $jNode $secTagI $Lpi $secTagJ $Lpj $E $A $Iz $transfTag <-mass $massDens> <-iter $maxIters $tol>
+\end{lstlisting}
+
+
+对于一个三维问题：
+\begin{lstlisting}
+element beamWithHinges $eleTag $iNode $jNode $secTagI $Lpi $secTagJ $Lpj $E $A $Iz $Iy $G $J $transfTag <-mass $massDens> <-iter $maxIters $tol>
+\end{lstlisting}
+
+这个命令被用来构造一个beam With Hinges元素对象，它是基于非迭代的（或迭代的）灵活性公式，并且认为可塑性集中在元素末端的指定铰链长度上。\\
+请注意，beamHithges元素只在元素端定位塑性铰。\\
+这种类型的元素将元素分为三个部分：两个端部的铰链和中间的线性元素区域。铰链是通过分配给每个以前定义的部分来定义的。每个铰链的长度也由用户指定。
+\begin{lstlisting}
+element dispBeamColumn $eleTag $iNode $jNode $numIntgrPts $secTag $transfTag <-mass $massDens>
+\end{lstlisting}
+此命令用于构造一个dispBeamColumn元素对象，它是一个分布式可塑性，基于位移的梁柱元素。
 \subsection{ZeroLength Elements}
 %ZeroLength Elements包括：Zero-Length Elements，Zero-Length ND Element,Zero-Length Section Element.
 \begin{figure}[H]		
@@ -172,14 +197,27 @@ element elasticBeamColumn $eleTag $iNode $jNode $A $E $G $J $Iy $Iz $transfTag
 	\label{tu11}
 \end{figure}
 
-
-
-
-
-
-
-
-
+\subsection{quad Element}
+\begin{figure}[H]		
+	\centering
+	\includegraphics[width=1\textwidth]{quad.pdf}
+	\caption{quad Elements分类}
+	\label{tu12}
+\end{figure}
+\subsection{ Shell Element}
+\begin{figure}[H]		
+	\centering
+	\includegraphics[width=1\textwidth]{shell.pdf}
+	\caption{shell Elements分类}
+	\label{tu12}
+\end{figure}
+\subsection{brick Element}
+\begin{figure}[H]		
+	\centering
+	\includegraphics[width=1\textwidth]{brick.pdf}
+	\caption{brick Elements分类}
+	\label{tu12}
+\end{figure}
 
 
 

@@ -1,0 +1,4 @@
+digraph gra1{
+//子图五
+generic->{"GenericClient";"GenericCopy"}
+}

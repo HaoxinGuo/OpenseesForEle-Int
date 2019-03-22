@@ -1,0 +1,4 @@
+digraph gra1{
+//子图六
+HUelements->{"KikuchiBearing";"MultipleNormalSpring";"MultipleShearSpring";"YamamotoBiaxialHDR"}
+}

@@ -1,0 +1,4 @@
+digraph gra1{
+//子图十二
+"brick"->{"BbarBrick";"BbarBrickWithSensitivity";"Brick";"shp3d";"Twenty_Node_Brick"}
+}

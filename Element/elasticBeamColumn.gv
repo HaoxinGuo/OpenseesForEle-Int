@@ -1,0 +1,4 @@
+digraph gra1{
+elasticBeamColumn->
+{"ElasticBeam2d";"ElasticBeam3d";"ElasticTimoshenkoBeam2d";"ElasticTimoshenkoBeam3d";"ModElasticBeam2d"}
+}

@@ -1,0 +1,4 @@
+//子图三
+digraph gra1{
+forceBeamColumn->{"ElasticForceBeamColumn2d";"ElasticForceBeamColumn3d ";"ElasticForceBeamColumnWarping2d ";"ForceBeamColumn2d ";"ForceBeamColumn3d ";"ForceBeamColumnCBDI2d ";"ForceBeamColumnWarping2d "}
+}

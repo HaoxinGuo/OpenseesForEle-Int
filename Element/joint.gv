@@ -1,0 +1,10 @@
+digraph gra1{
+//子图七
+"joint"->{"BeamColumnJoint2d";
+"BeamColumnJoint3d";
+"ElasticTubularJoint";
+"Joint2D";
+"Joint3D";
+"MP_Joint2D";
+"MP_Joint3D"}
+}
