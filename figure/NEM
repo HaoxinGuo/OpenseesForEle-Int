@@ -1,0 +1,10 @@
+digraph gra6{
+ "NewmarkMethod"->{
+Newmark;
+Newmark1;
+NewmarkExplicit;
+NewmarkHSFixedNumlter;
+NewmarkHSIncrLimit;
+NewmarkHSIncrReduct
+}
+}

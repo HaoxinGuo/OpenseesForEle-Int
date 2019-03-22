@@ -1,0 +1,15 @@
+digraph Ele{
+Zerolength ->{
+"CoupledZL";
+"ZL";
+"ZLCT2D";
+"ZLCT3D";
+"ZLCTNTS2D";
+"ZLlmpact3D";
+"ZLlnterface2D";
+"ZLND";
+"ZLRocking";
+"ZLSection"
+}
+label="ZL:Zerolength Contact=CT "
+}

@@ -1,0 +1,6 @@
+digraph gra7{
+ "TRBDF"->{
+TRBDF2;
+TRBDF3
+}
+}

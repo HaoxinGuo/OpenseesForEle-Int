@@ -1,0 +1,18 @@
+digraph gra4{
+ "HHTMethod"->{
+HHT;
+HHT_TP;
+HHTE;
+HHTE_TP;
+HHTG; 
+HHTG_TP; 
+HHTGE; 
+HHTGE_TP; 
+HHTHSFixedNumlter; 
+HHTHSFixedNumlter_TP; 
+HHTHSIncrLimit; 
+HHTHSIncrLimit_TP; 
+HHTHSIncrReduct; 
+HHTHSIncrReduct_TP;
+}
+}

@@ -1,0 +1,7 @@
+digraph gra3{
+ "CDM"->{
+CentralDifference; 
+CentralDifferenceAlternative; 
+CentralDifferenceNoDamping
+}
+}

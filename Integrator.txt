@@ -1,0 +1,84 @@
+digraph gra1{
+ Integrator->{
+"AlphaOS ";
+"BackwardEuler ";
+"CentralDifference ";
+"CollocationHS ";
+"GeneralizedAlpha ";
+"HHT";
+"Houbolt";
+"KR-AlphaExplicit";
+"Newmark";
+"ParkLMS3";
+"TRBDF";
+"Wilson Theta"
+}
+}
+
+digraph gra2{
+ "AlphaOS "->{
+AlphaOS; 
+AlphaOS_TP;
+AlphaOSGeneralized ;
+AlphaOSGeneralized_TP
+}
+}
+
+digraph gra3{
+ "CDM"->{
+CentralDifference; 
+CentralDifferenceAlternative; 
+CentralDifferenceNoDamping
+}
+}
+
+digraph gra4{
+ "HHTMethod"->{
+HHT;
+HHT_TP;
+HHTExplicit;
+HHTExplicit_TP;
+HHTGeneralized; 
+HHTGeneralized_TP; 
+HHTGeneralizedExplicit; 
+HHTGeneralizedExplicit_TP; 
+HHTHSFixedNumlter; 
+HHTHSFixedNumlter_TP; 
+HHTHSIncrLimit; 
+HHTHSIncrLimit_TP; 
+HHTHSIncrReduct; 
+HHTHSIncrReduct_TP;
+}
+}
+
+digraph gra5{
+ "KR-AlphaMethod"->{
+"KR-alphaExplicit";
+"KR-alphaExplicit_TP"
+}
+}
+
+digraph gra6{
+ "NewmarkMethod"->{
+Newmark;
+Newmark1;
+NewmarkExplicit;
+NewmarkHSFixedNumlter;
+NewmarkHSIncrLimit;
+NewmarkHSIncrReduct
+}
+}
+
+digraph gra7{
+ "TRBDF"->{
+TRBDF2;
+TRBDF3
+}
+}
+
+
+
+
+
+
+
